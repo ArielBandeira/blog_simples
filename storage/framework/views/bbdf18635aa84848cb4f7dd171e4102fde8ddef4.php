@@ -118,7 +118,7 @@
 <!--- CONTATO --->
 <div class="row col-sm-12">
   <div class="col-sm-6 text-center">
-        <form action="/action_page.php">
+        <form action"<?php echo e(route('contato')); ?>">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
           <label for="lname">Last Name</label>
