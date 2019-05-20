@@ -18,7 +18,7 @@
   }
   .banner{
     background-color: #6A92D4;
-    color: #E2E2E2;
+    color: #FFFFFF;
   }
   .navbar{
     background-color: #A9C1EA;
@@ -48,11 +48,12 @@
 
 <body>
 
-  <!--- BANNER NO TOPO DA PÁGINA --->
-<div class="banner jumbotron text-center" style="margin-bottom:0">
-  <h1>Blog Simples</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
-</div>
+<!--- BANNER NO TOPO DA PÁGINA --->
+  <div class="banner jumbotron text-center" style="margin-bottom:0">
+    <h1>Blog Simples</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+  </div>
+<!--- fim do banner --->
 
 <!--- MENU --->
 

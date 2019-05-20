@@ -13,9 +13,15 @@
 
   <!--- CSS --->
   <style>
-  .fakeimg {
-    height: 200px;
-    background: #aaa;
+  body{
+    background-color: #E5EDFB;
+  }
+  .banner{
+    background-color: #6A92D4;
+    color: #FFFFFF;
+  }
+  .navbar{
+    background-color: #A9C1EA;
   }
   a{
     color: #44484B;
@@ -33,22 +39,25 @@
   .some_links{
     margin-top: 100px;
   }
+  .footer{
+    background-color: #84A5DE;
+  }
   </style>
 
 </head>
 
 <body>
 
-  <!--- BANNER NO TOPO DA PÁGINA --->
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <h1>Blog Simples</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
-</div>
+<!--- BANNER NO TOPO DA PÁGINA --->
+  <div class="banner jumbotron text-center" style="margin-bottom:0">
+    <h1>Blog Simples</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+  </div>
 <!--- fim do banner --->
 
 <!--- MENU --->
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-expand-sm">
   <a class="navbar-brand" href="<?php echo e(route('home')); ?>">Home</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
@@ -77,7 +86,7 @@
         <?php $__currentLoopData = $autores; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $autor): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
           <a href="#"><h2><?php echo e($autor -> nome); ?></h2></a>
           <br>
-          <img class="img-fluid" src="http://localhost/blog_noticias/public/images/profiles/<?php echo e($autor -> profile_pic); ?>" alt="autor" class="profile_img" width="200" height="100">
+          <img class="img-fluid" src="http://localhost/blog_noticias/public/images/profiles/<?php echo e($autor -> profile_pic); ?>" alt="autor" class="profile_img" width="500" height="200">
           <br><br>
           <p><?php echo e($autor -> bio); ?></p>
           <br><br>
@@ -104,32 +113,33 @@
             echo $quotes[$randomquote];
           ?></p>
         </div>
+        <!--- SOME LINKS --->
         <div class="some_links">
           <h3>Some Links</h3>
           <p>Lorem ipsum dolor sit ame.</p>
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="<?php echo e(route('home')); ?>">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Sobre Mim</a>
+              <a class="nav-link active" href="<?php echo e(route('sobreMim')); ?>">Sobre Mim</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
+              <a class="nav-link" href="<?php echo e(route('contato')); ?>">Contato</a>
             </li>
           </ul>
           <hr class="d-sm-none">
         </div>
       </div>
-    <!--- FIM DO SOBRE MIM --->
+  <!--- FIM DO SOBRE MIM --->
 
   </div>
 </div>
 
 <!--- FOOTER --->
 
-<div class="jumbotron text-center" style="margin-bottom:0">
-  <p>Footer</p>
+<div class="footer jumbotron text-center" style="margin-bottom:0">
+  <p><a href="https://github.com/ArielBandeira/blog_simples">Sistemas de Informação | IFCE - Campus Cedro</a></p>
 </div>
 <!--- fim do footer --->
 

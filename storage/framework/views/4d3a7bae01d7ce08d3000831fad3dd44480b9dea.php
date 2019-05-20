@@ -18,7 +18,7 @@
   }
   .banner{
     background-color: #6A92D4;
-    color: #E2E2E2;
+    color: #FFFFFF;
   }
   .navbar{
     background-color: #A9C1EA;
