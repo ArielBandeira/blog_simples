@@ -19,6 +19,8 @@ Route::resource('artigo', 'ArtigoController');
 
 Route::resource('autor', 'AutorController');
 
+Route::resource('home', 'HomeController');
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/home/artigo/{id}', 'HomeController@artigo')->name('artigo');

@@ -48,11 +48,12 @@
 
 <body>
 
-  <!--- BANNER NO TOPO DA PÁGINA --->
-<div class="banner jumbotron text-center" style="margin-bottom:0">
-  <h1>Blog Simples</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
-</div>
+<!--- BANNER NO TOPO DA PÁGINA --->
+  <div class="banner jumbotron text-center" style="margin-bottom:0">
+    <h1>Blog Simples</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+  </div>
+<!--- fim do banner --->
 
 <!--- MENU --->
 
@@ -91,17 +92,58 @@
       </div>
   <!--- fim de artigo --->
 
-  <!--- PARTE SOBRE MIM --->
+    <!--- PARTE SOBRE MIM --->
 
-    <div class="col-sm-4">
-      <h2><?php echo e($autor -> nome); ?></h2>
-      <img class="img-fluid" src="http://localhost/blog_noticias/public/images/profiles/<?php echo e($autor -> profile_pic); ?>" alt="autor" width="350" height="100">
-      <p><?php echo e($autor -> bio); ?></p>
-    </div>
-  <!--- FIM DO SOBRE MIM --->
+      <div class="col-sm-4">
+        <h2><?php echo e($autor -> nome); ?></h2>
+        <img class="img-fluid" src="http://localhost/blog_noticias/public/images/profiles/<?php echo e($autor -> profile_pic); ?>" alt="autor" width="350" height="100">
+        <p><?php echo e($autor -> bio); ?></p>
+      </div>
+    <!--- FIM DO SOBRE MIM --->
+
+  <!--- ARTIGOS --->
+      <div class="col-sm-2">
+        <h3>Comentários<h3>
+          <?php $__currentLoopData = $comentario; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $comentarios): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+          <?php if($comentarios->id_artigo == $artigo->id){?>
+            <h4><?php echo e($comentarios -> nome); ?></h4>
+            <p><?php echo e($comentarios -> comentario); ?></p>
+            <p><?php echo e($comentarios -> email); ?></p>
+            <p>Publicado em: <?php echo e($artigo -> created_at); ?></p>
+           <?php }?>
+          <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+      </div>
+  <!--- fim artigos --->
 
   </div>
 </div>
+
+<!--- COMENTÁRIOS --->
+<br><br>
+<div class="container contact-single">
+  <h3>Deixe um comentário</h3>
+  <form action="<?php echo e(route('home.store')); ?>" method="post" class="mt-4">
+    <?php echo csrf_field(); ?>
+      <input type="hidden" name="id_artigo" value="<?php echo e($artigo -> id); ?>">
+      <input type="hidden" name="<?php echo e($autor -> id); ?>" value="id_autor">
+      <div class="form-group">
+          <label for="contactcomment">Seu Comentário *</label>
+          <input class="form-control border" rows="5" id="contactcomment" name="comentario"></input>
+      </div>
+      <div class="d-sm-flex">
+          <div class="col-sm-6 form-group p-0">
+              <label for="contactusername">Nome *</label>
+              <input type="text" class="form-control border" id="contactusername" name="nome">
+          </div>
+          <div class="col-sm-6 form-group ml-sm-3">
+              <label for="contactemail">Email *</label>
+              <input type="email" class="form-control border" id="contactemail" name="email">
+          </div>
+      </div>
+      <button type="submit" class="mt-3 btn btn-success btn-block py-3">Postar comentário</button>
+  </form>
+</div><br><br><br><br>
+<!--- fim comentáios --->
 
 <!--- FOOTER --->
 

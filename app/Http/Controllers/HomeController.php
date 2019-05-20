@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Artigo;
 use App\Autor;
+use App\Comentario;
 
 class HomeController extends Controller
 {
@@ -17,10 +18,30 @@ class HomeController extends Controller
 
     public function artigo($id)
     {
+      $comentario = Comentario::all();
       $artigo = Artigo::find($id);
       $autor = Autor::find($artigo->id_autor);
 
-      return view('home.artigo', ['autor' => $autor, 'artigo' => $artigo]);
+      return view('home.artigo', ['comentario' => $comentario, 'autor' => $autor, 'artigo' => $artigo]);
+    }
+
+    //GUARDAR Comentario
+    public function store(Request $request)
+    {
+        $comentario = new Comentario;
+
+        $comentario->id_artigo = $request->input('id_artigo');
+        $comentario->comentario = $request->input('comentario');
+        $comentario->nome = $request->input('nome');
+        $comentario->email = $request->input('email');
+
+        $comentario->save();
+
+        $comentario = Comentario::all();
+        $artigo = Artigo::find($request->input('id_artigo'));
+        $autor = Autor::find($artigo->id_autor);
+
+        return view('home.artigo', ['comentario' => $comentario, 'autor' => $autor, 'artigo' => $artigo]);
     }
 
     public function sobreMim()

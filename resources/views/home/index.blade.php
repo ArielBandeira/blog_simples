@@ -92,6 +92,7 @@
           <br><br>
         @endforeach
       </div>
+  <!--- fim artigos --->
 
 <!--- PARTE SOBRE MIM --->
     <div class="col-sm-4">
@@ -130,7 +131,7 @@
         <hr class="d-sm-none">
       </div>
     </div>
-<!--- FIM DO SOBRE MIM --->
+<!--- fim do sobre mim --->
 
   </div>
 </div>

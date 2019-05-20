@@ -48,11 +48,12 @@
 
 <body>
 
-  <!--- BANNER NO TOPO DA PÁGINA --->
-<div class="banner jumbotron text-center" style="margin-bottom:0">
-  <h1>Blog Simples</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
-</div>
+<!--- BANNER NO TOPO DA PÁGINA --->
+  <div class="banner jumbotron text-center" style="margin-bottom:0">
+    <h1>Blog Simples</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+  </div>
+<!--- fim do banner --->
 
 <!--- MENU --->
 
@@ -91,6 +92,7 @@
           <br><br>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
       </div>
+  <!--- fim artigos --->
 
 <!--- PARTE SOBRE MIM --->
     <div class="col-sm-4">
@@ -129,7 +131,7 @@
         <hr class="d-sm-none">
       </div>
     </div>
-  <!--- FIM DO SOBRE MIM --->
+<!--- fim do sobre mim --->
 
   </div>
 </div>

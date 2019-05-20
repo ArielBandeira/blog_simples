@@ -382,6 +382,7 @@ class ComposerStaticInit3c89c94b4494674899949ce9a0166dc9
     public static $classMap = array (
         'App\\Artigo' => __DIR__ . '/../..' . '/app/Artigo.php',
         'App\\Autor' => __DIR__ . '/../..' . '/app/Autor.php',
+        'App\\Comentario' => __DIR__ . '/../..' . '/app/Comentario.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\ArtigoController' => __DIR__ . '/../..' . '/app/Http/Controllers/ArtigoController.php',
