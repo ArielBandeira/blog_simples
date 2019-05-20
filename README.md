@@ -4,7 +4,7 @@
 Implemented using the PHP framework [Laravel](https://laravel.com/) and the Dependency Manager for PHP [Composer](https://getcomposer.org/)
 
 
-![Laravel Framework](public/images/preview/preview3.jpg)
+![Laravel Framework](public/images/preview/preview3.JPG)
 
 ## Motivation
 This project is for a college course.
@@ -43,7 +43,7 @@ With Apache and MySQL running
 
 ## Preview
 ![First Page](public/images/preview/preview1.jpg)
-![First Page](public/images/preview/preview2.jpg)
+![First Page2](public/images/preview/preview2.JPG)
 
 ## MADE BY 
 
