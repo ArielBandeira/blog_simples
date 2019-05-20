@@ -9,6 +9,14 @@ Implemented using the PHP framework [Laravel](https://laravel.com/) and the Depe
 ## Motivation
 This project is for a college course.
 
+## Table of Contents
+* [Technology Stack](#technology-stack)
+* [Requirements](#requirements)
+* [Instalattion](#instalattion)
+* [Operation](#operation)
+* [Preview](#preview)
+* [Credits](#made-by)
+
 ## Technology Stack
 PHP, JS, HTML, CSS, Bootstrap.
 Apache, MySQL.
@@ -37,13 +45,8 @@ With Apache and MySQL running
 ![First Page](public/images/preview/preview1.jpg)
 ![First Page](public/images/preview/preview2.jpg)
 
-## Release History
-* 0.0.1
-    * Work in progress
-* 0.1
-    * First Version
-
 ## MADE BY 
+
 ### IFCE Campus Cedro
 * Ariel Bandeira – [@twainariel](https://twitter.com/TwainAriel) – arieltwain@gmail.com
 * Jordanna Hellen – jordanna@gmail.com
