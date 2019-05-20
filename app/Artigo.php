@@ -11,7 +11,7 @@ class Artigo extends Model
     protected $fillable = [
       'id',
       'titulo',
-      'autor_id',
+      'id_autor',
       'conteudo',
       'imagem'
     ];

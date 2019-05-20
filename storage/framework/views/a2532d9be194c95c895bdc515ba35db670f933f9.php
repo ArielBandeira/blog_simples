@@ -14,7 +14,7 @@
         <tr>
           <td><?php echo e($artigo->id); ?></td>
           <td><?php echo e($artigo->titulo); ?></td>
-          <td><?php echo e($artigo->autor_id); ?></td>
+          <td><?php echo e($artigo->id_autor); ?></td>
           <td><?php echo e($artigo->conteudo); ?></td>
           <td><?php echo e($artigo->imagem); ?></td>
         </tr>

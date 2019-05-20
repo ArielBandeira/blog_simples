@@ -14,7 +14,7 @@
         <tr>
           <td>{{$artigo->id}}</td>
           <td>{{$artigo->titulo}}</td>
-          <td>{{$artigo->autor_id}}</td>
+          <td>{{$artigo->id_autor}}</td>
           <td>{{$artigo->conteudo}}</td>
           <td>{{$artigo->imagem}}</td>
         </tr>

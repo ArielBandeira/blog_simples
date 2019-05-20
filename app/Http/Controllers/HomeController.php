@@ -11,20 +11,22 @@ class HomeController extends Controller
     public function index()
     {
       $artigos = Artigo::all();
-      return view('home.index', ['artigos' => $artigos]);
+      $autores = Autor::all();
+      return view('home.index', ['artigos' => $artigos, 'autores' => $autores]);
     }
 
     public function artigo($id)
     {
       $artigo = Artigo::find($id);
-      $id_autor = $artigo->autor_id;
-      $autor = Autor::find($id_autor);
-      return view('home.artigo', ['artigo'=>$artigo], ['autor'=>$autor]);
+      $autor = Autor::find($artigo->id_autor);
+
+      return view('home.artigo', ['autor' => $autor, 'artigo' => $artigo]);
     }
 
     public function sobreMim()
     {
-      return view('home.sobre_mim');
+      $autores = Autor::all();
+      return view('home.sobre_mim', ['autores' => $autores]);
     }
 
     public function contato()

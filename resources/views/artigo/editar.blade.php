@@ -10,7 +10,7 @@
         <fieldset>
           <legend>Editar Artigo</legend>
             <p>Título: </p><input type="text" name="titulo" value="{{$artigo->titulo}}"><br /><br />
-            <p>ID do Autor: </p><input type="text" name="autor_id" value="{{$artigo->autor_id}}"><br /><br />
+            <p>ID do Autor: </p><input type="text" name="id_autor" value="{{$artigo->id_autor}}"><br /><br />
             <p>Conteúdo: </p><textarea type="text" name="conteudo"  rows = "5" cols = "60" value="{{$artigo->conteudo}}"></textarea><br /><br />
             <p>Imagem: </p><input type="text" name="imagem" value="{{$artigo->imagem}}"><br /><br />
             <input class="button" type="submit" name="botaoEnviar" value="Enviar">

@@ -17,6 +17,22 @@
     height: 200px;
     background: #aaa;
   }
+  a{
+    color: #44484B;
+  }
+  a:hover{
+    text-decoration: none;
+    color: #77796F;
+  }
+  .quote{
+    margin-top: -100px;
+    font-size: 15px;
+    color: #EEEEEE;
+    text-shadow:-2px -1px 2px #000000;
+  }
+  .some_links{
+    margin-top: 100px;
+  }
   </style>
 
 </head>
