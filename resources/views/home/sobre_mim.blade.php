@@ -26,7 +26,7 @@
   <!--- BANNER NO TOPO DA PÁGINA --->
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Blog Simples</h1>
-  <p>Resize this responsive page to see the effect!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
 </div>
 
 <!--- MENU --->

@@ -21,12 +21,6 @@
         <td><?php echo e($autor -> email); ?></td>
         <td><?php echo e($autor -> data_nasc); ?></td>
         <td><?php echo e($autor -> profile_pic); ?></td>
-        <td>
-            <form action="<?php echo e(route('buscarArtigos', $autor->id)); ?>" method="get">
-              <?php echo csrf_field(); ?>
-              <input type="submit" value="Artigos">
-            </form>
-          </td>
       </tr>
       <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </table>

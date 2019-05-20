@@ -21,12 +21,6 @@
         <td>{{$autor -> email}}</td>
         <td>{{$autor -> data_nasc}}</td>
         <td>{{$autor -> profile_pic}}</td>
-        <td>
-            <form action="{{route('buscarArtigos', $autor->id)}}" method="get">
-              @csrf
-              <input type="submit" value="Artigos">
-            </form>
-          </td>
       </tr>
       @endforeach
     </table>

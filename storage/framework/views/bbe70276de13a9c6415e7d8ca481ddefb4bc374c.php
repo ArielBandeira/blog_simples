@@ -13,6 +13,7 @@
             <p>Biografia: </p><textarea type="text" name="bio" rows = "5" cols = "60"></textarea>
             <p>Email: </p><input type="text" name="email"><br /><br />
             <p>Data de Nascimento: </p><input type="text" name="data_nasc"><br /><br />
+            <p>Foto Perfil: </p><input type="text" name="profile_pic"><br /><br />
             <input class="button" type="submit" name="botaoEnviar" value="Enviar">
         </fieldset>
       </form>
