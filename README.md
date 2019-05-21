@@ -26,7 +26,7 @@ Apache, MySQL.
 * Apache >= 2.4
 * MySQL >= 8.0
 
-## Instalattion
+## Installation
 
     1. Download the repository
 
